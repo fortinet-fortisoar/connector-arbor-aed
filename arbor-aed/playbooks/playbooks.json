@@ -4,7 +4,7 @@
     {
       "uuid": "97d7d09f-518e-4aa3-9626-ca1a858249c9",
       "@type": "WorkflowCollection",
-      "name": "Sample - Netscout AED - 1.0.0",
+      "name": "Sample - Netscout AED - 1.0.1",
       "description": "Netscout Arbor Edge Defense (AED) secures the internet data center edge from threats against availability \u2014 specifically from application-layer, distributed denial of service (DDoS) attacks.",
       "visible": true,
       "image": null,
@@ -68,7 +68,7 @@
                 "name": "Netscout AED",
                 "config": "''",
                 "params": [],
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_countries",
                 "operationTitle": "Get Countries",
@@ -151,7 +151,7 @@
                   "active": true,
                   "protectionLevel": "Low"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "create_inbound_protection_groups",
                 "operationTitle": "Create Inbound Protection Groups",
@@ -231,7 +231,7 @@
                 "name": "Netscout AED",
                 "config": "''",
                 "params": [],
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_inbound_protection_groups",
                 "operationTitle": "Get Inbound Protection Groups",
@@ -311,7 +311,7 @@
                 "name": "Netscout AED",
                 "config": "''",
                 "params": [],
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "update_inbound_protection_groups",
                 "operationTitle": "Update Inbound Protection Groups",
@@ -393,7 +393,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "add_inbound_blacklist_countries",
                 "operationTitle": "Add Inbound Blacklist Countries",
@@ -475,7 +475,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_inbound_blacklisted_countries",
                 "operationTitle": "Get Inbound Blacklisted Countries",
@@ -557,7 +557,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "remove_inbound_blacklisted_countries",
                 "operationTitle": "Remove Inbound Blacklisted Countries",
@@ -639,7 +639,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "add_inbound_blacklist_domains",
                 "operationTitle": "Add Inbound Blacklist Domains",
@@ -721,7 +721,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_inbound_blacklisted_domains",
                 "operationTitle": "Get Inbound Blacklisted Domains",
@@ -803,7 +803,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "remove_inbound_blacklisted_domains",
                 "operationTitle": "Remove Inbound Blacklisted Domains",
@@ -885,7 +885,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "add_inbound_blacklist_hosts",
                 "operationTitle": "Add Inbound Blacklist Hosts",
@@ -967,7 +967,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_inbound_blacklisted_hosts",
                 "operationTitle": "Get Inbound Blacklisted Hosts",
@@ -1049,7 +1049,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "remove_inbound_blacklisted_hosts",
                 "operationTitle": "Remove Inbound Blacklisted Hosts",
@@ -1131,7 +1131,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "add_inbound_whitelisted_hosts",
                 "operationTitle": "Add Inbound Whitelisted Hosts",
@@ -1213,7 +1213,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_inbound_whitelisted_hosts",
                 "operationTitle": "Get Inbound Whitelisted Hosts",
@@ -1295,7 +1295,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "remove_inbound_whitelisted_hosts",
                 "operationTitle": "Remove Inbound Whitelisted Hosts",
@@ -1377,7 +1377,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "add_inbound_blacklist_urls",
                 "operationTitle": "Add Inbound Blacklist URLs",
@@ -1459,7 +1459,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_inbound_blacklisted_urls",
                 "operationTitle": "Get Inbound Blacklisted URLs",
@@ -1541,7 +1541,7 @@
                 "params": {
                   "cid_pgid": "Protection Group ID"
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "remove_inbound_blacklisted_urls",
                 "operationTitle": "Remove Inbound Blacklisted URLs",
@@ -1621,7 +1621,7 @@
                 "name": "Netscout AED",
                 "config": "''",
                 "params": [],
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "add_outbound_blacklist_hosts",
                 "operationTitle": "Add Outbound Blacklist Hosts",
@@ -1703,7 +1703,7 @@
                 "params": {
                   "updateTime": 0
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_outbound_blacklisted_hosts",
                 "operationTitle": "Get Outbound Blacklisted Hosts",
@@ -1783,7 +1783,7 @@
                 "name": "Netscout AED",
                 "config": "''",
                 "params": [],
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "remove_outbound_blacklisted_hosts",
                 "operationTitle": "Remove Outbound Blacklisted Hosts",
@@ -1863,7 +1863,7 @@
                 "name": "Netscout AED",
                 "config": "''",
                 "params": [],
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "add_outbound_whitelisted_hosts",
                 "operationTitle": "Add Outbound Whitelist Hosts",
@@ -1945,7 +1945,7 @@
                 "params": {
                   "updateTime": 0
                 },
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "get_outbound_whitelisted_hosts",
                 "operationTitle": "Get Outbound Whitelisted Hosts",
@@ -2025,7 +2025,7 @@
                 "name": "Netscout AED",
                 "config": "''",
                 "params": [],
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "connector": "arbor-aed",
                 "operation": "remove_outbound_whitelisted_hosts",
                 "operationTitle": "Remove Outbound Whitelisted Hosts",

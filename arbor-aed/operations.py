@@ -1,7 +1,7 @@
 """
 Copyright start
 MIT License
-Copyright (c) 2023 Fortinet Inc
+Copyright (c) 2024 Fortinet Inc
 Copyright end
 """
 
@@ -49,8 +49,13 @@ class ArborAps(object):
             if response.ok:
                 return response.json()
             else:
-                logger.error(response.text)
-                raise ConnectorError({'status_code': response.status_code, 'message': response.text})
+
+                if response.reason:
+                    logger.error(response.reason)
+                    raise ConnectorError({'status_code': response.status_code, 'message': response.reason})
+                else:
+                    logger.error(response.text)
+                    raise ConnectorError({'status_code': response.status_code, 'message': response.text})
         except requests.exceptions.SSLError:
             raise ConnectorError('SSL certificate validation failed')
         except requests.exceptions.ConnectTimeout:
