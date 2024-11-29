@@ -5,3 +5,4 @@
   - `Remove Outbound Blacklisted Hosts`
   - `Add Outbound Whitelist Hosts`
   - `Remove Outbound Whitelisted Hosts`
+- Added a new action `Execute an API Request`.
