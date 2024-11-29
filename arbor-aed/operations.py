@@ -296,6 +296,22 @@ def _check_health(config):
         raise ConnectorError('{}'.format(e))
 
 
+def execute_an_api_call(config, params):
+    aps = ArborAps(config)
+    method = params.get("method")
+    endpoint = params.get("endpoint")
+    if params.get("query_params"):
+        query_params = params.get("query_params")
+        query_params = get_params(query_params)
+    else:
+        query_params = None
+    if params.get("payload"):
+        payload = json.dumps(params.get("payload"))
+    else:
+        payload = None
+    return aps.make_request(endpoint=endpoint, method=method, params=query_params, data=payload)
+
+
 operations = {
     'get_countries': get_countries,
     'create_inbound_protection_groups': create_inbound_protection_groups,
@@ -321,5 +337,6 @@ operations = {
     'remove_outbound_blacklisted_hosts': remove_outbound_blacklisted_hosts,
     'add_outbound_whitelisted_hosts': add_outbound_whitelisted_hosts,
     'get_outbound_whitelisted_hosts': get_outbound_whitelisted_hosts,
-    'remove_outbound_whitelisted_hosts': remove_outbound_whitelisted_hosts
+    'remove_outbound_whitelisted_hosts': remove_outbound_whitelisted_hosts,
+    'execute_an_api_call': execute_an_api_call
 }

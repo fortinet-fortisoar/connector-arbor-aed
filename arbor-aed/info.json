@@ -1,6 +1,6 @@
 {
   "name": "arbor-aed",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "label": "Netscout AED",
   "description": "Netscout Arbor Edge Defense (AED) secures the internet data center edge from threats against availability — specifically from application-layer, distributed denial of service (DDoS) attacks.",
   "publisher": "Fortinet",
@@ -2535,6 +2535,63 @@
         }
       ],
       "enabled": true
+    },
+    {
+      "operation": "execute_an_api_call",
+      "title": "Execute an API Call",
+      "annotation": "send_custom_request",
+      "description": "Sends an API request to any API endpoint based on specified HTTP method, endpoint, and other input parameters that you have specified, enabling flexible API interactions tailored to user needs. ",
+      "category": "investigation",
+      "visible": true,
+      "enabled": true,
+      "parameters": [
+        {
+          "name": "method",
+          "title": "HTTP Method",
+          "type": "select",
+          "editable": true,
+          "visible": true,
+          "required": true,
+          "description": "Select an HTTP action for the request. You can select from the following options:  \n\nDELETE \n\nGET \n\nPATCH \n\nPOST \n\nPUT ",
+          "options": [
+            "DELETE",
+            "GET",
+            "PATCH",
+            "POST",
+            "PUT"
+          ]
+        },
+        {
+          "title": "Endpoint",
+          "name": "endpoint",
+          "tooltip": "Specify the target API URL path for example: protection-groups/allowed-hosts/",
+          "description": "Specify the target API URL path for the request. \nFor example, if the website is \"https://example.com \" and URL path is \"/images/pic.jpg\". The endpoint would be \"/images/pic.jpg\". ",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": true,
+          "placeholder": "For e.g countries/"
+        },
+        {
+          "title": "Query Parameters",
+          "name": "query_params",
+          "description": "(Optional) Specify any optional parameters to add to the URL and refine the request. ",
+          "type": "json",
+          "visible": true,
+          "editable": true,
+          "required": false
+        },
+        {
+          "name": "payload",
+          "title": "Request Payload",
+          "type": "json",
+          "editable": true,
+          "visible": true,
+          "required": false,
+          "description": "(Optional) Specify data, as JSON, to be sent as the request payload (typically for POST or PUT requests). "
+        }
+      ],
+      "output_schema": {}
     }
   ]
 }
