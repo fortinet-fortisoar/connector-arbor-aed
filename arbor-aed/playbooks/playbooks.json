@@ -2380,7 +2380,7 @@
             {
               "uuid": "449cb306-ce11-4ff6-af43-f44f9b363fad",
               "@type": "WorkflowStep",
-              "name": "Execute an API Call",
+              "name": "Execute an API Request",
               "description": null,
               "status": null,
               "arguments": {
@@ -2395,7 +2395,7 @@
                 "version": "1.1.0",
                 "connector": "arbor-aed",
                 "operation": "execute_an_api_call",
-                "operationTitle": "Execute an API Call",
+                "operationTitle": "Execute an API Request",
                 "step_variables": {
                   "output_data": "{{vars.result}}"
                 }
@@ -2407,7 +2407,7 @@
           ],
           "triggerLimit": null,
           "description": "Sends an API request to any API endpoint based on specified HTTP method, endpoint, and other input parameters that you have specified, enabling flexible API interactions tailored to user needs. ",
-          "name": "Execute an API Call",
+          "name": "Execute an API Request",
           "tag": "#Netscout AED",
           "recordTags": [
             "Arbor",
@@ -2425,7 +2425,7 @@
               "@type": "WorkflowRoute",
               "label": null,
               "isExecuted": false,
-              "name": "Start-> Execute an API Call",
+              "name": "Start-> Execute an API Request",
               "sourceStep": "/api/3/workflow_steps/7af9869f-84cb-45ff-beb5-df9dd14c663d",
               "targetStep": "/api/3/workflow_steps/449cb306-ce11-4ff6-af43-f44f9b363fad"
             }

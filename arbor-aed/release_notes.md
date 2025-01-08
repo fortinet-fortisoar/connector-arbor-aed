@@ -1,8 +1,8 @@
 #### What's Improved
+- Added a new action `Execute an API Request`.
 - Added new key `response.reason` to get error message from server.
 - Added a new parameter `Select CID or PGID` to the following actions:
   - `Add Outbound Blacklist Hosts`
   - `Remove Outbound Blacklisted Hosts`
   - `Add Outbound Whitelist Hosts`
   - `Remove Outbound Whitelisted Hosts`
-- Added a new action `Execute an API Request`.
