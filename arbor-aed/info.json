@@ -9,7 +9,7 @@
   "category": "Network Security",
   "cs_approved": false,
   "cs_compatible": true,
-  "help_online": "https://docs.fortinet.com/document/fortisoar/1.0.0/netscout-arbor-edge-defense-aed/713/netscout-aed-v1-0-0",
+  "help_online": "https://docs.fortinet.com/document/fortisoar/1.1.0/netscout-arbor-edge-defense-aed/1012/netscout-aed-v1-1-0",
   "configuration": {
     "fields": [
       {
